@@ -114,3 +114,23 @@ test_app.py::test_add_zeros          PASSED  (0+0=0)
 | Test implementation    | 6 pytest tests covering all routes |
 | Deployment automation  | Render API deploy triggered on push to main |
 | Documentation          | This README |
+
+---
+
+## 📄 Submission Report
+
+This document bundle includes everything required for submission.
+
+- **GitHub repo:** https://github.com/namgaylhamo24/02240350_DSO101_A4
+- **Workflow file:** The CI/CD workflow is included at [.github/workflows/ci.yml](.github/workflows/ci.yml)
+- **Test output screenshot:** See [screenshots/render-deploy.png](screenshots/render-deploy.png) and [screenshots/github-action-secretrepo.png](screenshots/github-action-secretrepo.png)
+- **Live app URL:** (deployed on Render)
+
+If you want me to add the exact Render service URL here, provide the service URL or I can fetch it from `render.yaml` / your Render dashboard if credentials are available.
+
+---
+
+If you'd like, I can:
+- add the Render service URL to this README (if you provide it),
+- move `screenshots/` into a `docs/` folder, or
+- generate a small `DEPLOYMENT.md` with step-by-step screenshots.
