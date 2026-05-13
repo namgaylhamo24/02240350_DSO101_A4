@@ -1,4 +1,3 @@
-# 02240350_DSO101_A4
 # CI/CD Pipeline — Flask + GitHub Actions + Render
 
 A complete DevOps pipeline with **Build → Test → Deploy** automation.
@@ -88,20 +87,18 @@ In your GitHub repo → **Settings → Secrets → Actions**, add:
 | `RENDER_API_KEY`    | Your Render API key            |
 | `RENDER_SERVICE_ID` | Your Render service ID (`srv-...`) |
 
-After this, every push to `main` automatically deploys to Render. ✅
+After this, every push to `main` automatically deploys to Render. 
 
 ---
 
 ## 🧪 Tests
+Local test summary (run with `pytest test_app.py -v`):
 
 ```
-test_app.py::test_home               PASSED  (1+1==2 arithmetic check)
-test_app.py::test_home_route         PASSED  (GET / returns 200)
-test_app.py::test_health_route       PASSED  (GET /health returns healthy)
-test_app.py::test_add_route          PASSED  (3+7=10)
-test_app.py::test_add_negative_numbers  PASSED  (-5+3=-2)
-test_app.py::test_add_zeros          PASSED  (0+0=0)
+6 passed in ~5s
 ```
+
+Detailed tests are available in `test_app.py` and the local test screenshots linked below.
 
 ---
 
@@ -117,20 +114,3 @@ test_app.py::test_add_zeros          PASSED  (0+0=0)
 
 ---
 
-## 📄 Submission Report
-
-This document bundle includes everything required for submission.
-
-- **GitHub repo:** https://github.com/namgaylhamo24/02240350_DSO101_A4
-- **Workflow file:** The CI/CD workflow is included at [.github/workflows/ci.yml](.github/workflows/ci.yml)
-- **Test output screenshot:** See [screenshots/render-deploy.png](screenshots/render-deploy.png) and [screenshots/github-action-secretrepo.png](screenshots/github-action-secretrepo.png)
-- **Live app URL:** (deployed on Render)
-
-If you want me to add the exact Render service URL here, provide the service URL or I can fetch it from `render.yaml` / your Render dashboard if credentials are available.
-
----
-
-If you'd like, I can:
-- add the Render service URL to this README (if you provide it),
-- move `screenshots/` into a `docs/` folder, or
-- generate a small `DEPLOYMENT.md` with step-by-step screenshots.
