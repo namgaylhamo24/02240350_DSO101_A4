@@ -7,7 +7,7 @@ def home():
     return jsonify({
         "message": "Hello from CI/CD Pipeline!",
         "status": "running",
-        "version": "1.0.0"
+        "version": "1.0.1"
     })
 
 @app.route("/health")
